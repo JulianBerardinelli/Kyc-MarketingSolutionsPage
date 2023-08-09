@@ -1,0 +1,28 @@
+main {
+    section{
+        @include flex(block, center, center);
+        div{
+            @include flex(flex, center, center);
+            padding: 0px;
+        }
+        .titulo {
+            padding: 10px;
+            h1 {
+                font-size: 55px;
+                color: white;
+                text-shadow: 0 0 7px rgba(white, 0.3);
+            }
+        }
+        .subtitulo {
+            position: relative;
+            h2 {
+                font-size: 35px;
+                color: orange;
+                text-shadow: 0 0 7px #ffda6a;
+                position: absolute;
+                top: -70px;
+            }
+
+        }
+    }
+}

@@ -1,7 +1,8 @@
 {
   "name": "kyc_proyect",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
@@ -9,5 +10,11 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
 }
