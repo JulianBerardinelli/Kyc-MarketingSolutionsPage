@@ -7,5 +7,6 @@
 @import "./components/buttons";
 @import "./components/form-control";
 
-@import "./layout/index.scss/header";
-@import "./layout/index.scss/main.scss";
+@import "./layout/index.scss/header/header.scss";
+@import "./layout/index.scss/main/main.scss";
+@import "./layout/index.scss/main/keyframes.scss";

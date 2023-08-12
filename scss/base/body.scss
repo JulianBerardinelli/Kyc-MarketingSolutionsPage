@@ -4,7 +4,22 @@ body {
     background-size: 500% 100%;
     background-repeat: no-repeat;
     animation: gradient 45s ease infinite;
+    &::after {
+        content: "";
+        position: absolute;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/img/seatexture1.jpg"); /* Cambia la ruta a la imagen de textura */
+        opacity: 0.05; /* Ajusta la opacidad para controlar la intensidad de la textura */
+        pointer-events: none; /* Evita que la textura interfiera con la interacción */
+    }
 }
+
 
 @keyframes gradient {
     0% {
