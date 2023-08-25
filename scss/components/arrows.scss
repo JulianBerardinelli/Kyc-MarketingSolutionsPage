@@ -1,0 +1,47 @@
+.arrow {
+    position: absolute;
+    position: fixed; /* Cambia a position: fixed */
+    left: 100%; /* Centra horizontalmente */
+    top: 120%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid aqua;
+        border-right: 3px solid aqua;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: arrows 2s infinite;
+        &:nth-child(2){
+            animation-delay: -.2s;
+        }
+        &:nth-child(3){
+            animation-delay: -.4s;
+        }
+    }
+}
+.arrows {
+    position: absolute;/* Cambia a position: fixed */
+    left: 100%; /* Centra horizontalmente */
+    top: 132%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    span {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid aqua;
+        border-right: 3px solid aqua;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: arrows 2s infinite;
+        &:nth-child(2){
+            animation-delay: -.2s;
+        }
+        &:nth-child(3){
+            animation-delay: -.4s;
+        }
+    }
+}

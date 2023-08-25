@@ -1,0 +1,107 @@
+.conteiner2 {
+    background: linear-gradient(to bottom, rgb(115, 0, 255), #0d00ff);
+    height: 100vh;
+    margin-top: -61px;
+    padding-left: 100px;
+    padding-right: 100px;
+    .content2 {
+        @include flex (block ,center,center);
+        margin-top: 20px;
+        .number-data{
+            @include flex (flex, center, center);
+            flex-direction: column;
+            span.num {
+                margin-top: 10px;
+                color: white;
+                display: grid;
+                place-items: center;
+                font-weight: 600;
+                font-size: 35px;
+                text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+            }
+            span.text {
+                color: white;
+                text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .data-number2 {
+            margin-top: -70px;
+            justify-content:center ;
+            gap: 250px;
+            .number-data2 {
+                @include flex (flex, center, center);
+                flex-direction: column;
+                span.num {
+                    color: white;
+                    display: grid;
+                    place-items: center;
+                    font-weight: 600;
+                    font-size: 35px;
+                    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+                }
+                span.text {
+                    color: white;
+                    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+.conteinerw3 {
+    @include flex(block, center, normal);
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(222, 222, 222);
+    border-radius: 20px 0px 20px 0px;
+    height: 470px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    div {
+        margin-top: 2px;
+        .cont3 {
+            margin-top: 15px;
+            flex-direction: column;
+            justify-content: flex-start;
+            h1 {
+                margin-top: -20px;
+                color: rgb(115, 0, 255);
+                padding-top: 35px;
+                font-size: 35px;
+                text-shadow: 0px 2px 7px rgba(179, 179, 179, 0.5);
+            }
+            h2 {
+                color: aqua;
+                padding-top: 35px;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 150;
+                letter-spacing: 8px;
+                
+            }
+        }
+    }
+    .cards-choose {
+        padding: 20px;
+        padding-top: 0;
+        margin-top: -5px;
+        .carta {
+            gap: 30px;
+            margin: 50px;
+            margin-top: 25px;
+            padding: 20px;
+            text-shadow: 0px 2px 7px rgba(179, 179, 179, 0.5);
+            div {
+                .svg-icon {
+                    width: 16%;
+                    fill:  aqua;
+                }
+                h5 {
+                    color: rgb(0, 0, 0);
+                }
+                p {
+                    padding-top: 5px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
