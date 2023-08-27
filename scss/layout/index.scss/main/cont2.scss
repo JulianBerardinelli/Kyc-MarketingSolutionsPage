@@ -93,6 +93,10 @@
                 .svg-icon {
                     width: 16%;
                     fill:  aqua;
+                    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+                    &:hover {
+                        transform: scale(1.1); 
+                    }
                 }
                 h5 {
                     color: rgb(0, 0, 0);

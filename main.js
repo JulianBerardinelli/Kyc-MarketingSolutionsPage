@@ -4,22 +4,30 @@
 document.addEventListener("DOMContentLoaded", function () {
   const secondSection = document.querySelector("main > section:nth-of-type(2)");
   const thirdSection = document.querySelector("main > section:nth-of-type(3)");
+  const fourthSection = document.querySelector("main > section:nth-of-type(4)");
 
-  window.addEventListener("click", function () {
-    let scrollToSection;
+  window.addEventListener("click", function (event) {
+    // Verificar si el clic se realizó en el botón de Calendly
+    if (!event.target.classList.contains("btn-neon") &&
+    !event.target.classList.contains("btn-neons"))  {
+      let scrollToSection;
 
-    if (window.scrollY < secondSection.offsetTop) {
-      scrollToSection = secondSection;
-    } else if (window.scrollY < thirdSection.offsetTop) {
-      scrollToSection = thirdSection;
-
-    if (scrollToSection) {
-      window.scrollTo({
-        top: scrollToSection.offsetTop,
-        behavior: "smooth",
-      });
+      if (window.scrollY < secondSection.offsetTop) {
+        scrollToSection = secondSection;
+      } else if (window.scrollY < thirdSection.offsetTop) {
+        scrollToSection = thirdSection;
+      } else if (window.scrollY < fourthSection.offsetTop) {
+        scrollToSection = fourthSection;
+      } 
+      
+      if (scrollToSection) {
+        window.scrollTo({
+          top: scrollToSection.offsetTop,
+          behavior: "smooth",
+        });
+      }
     }
-  }});
+  });
 });
 
 
@@ -112,8 +120,8 @@ function formatNumberWithCommas(number) {
 }
 function startCounterIfVisible() {
   let valueDisplay = document.querySelectorAll(".num");
-  let interval = 2; // Ajusta este valor para cambiar la velocidad (por ejemplo, 2 para una animación más rápida)
-  let increment = 5; // Ajusta este valor para cambiar el incremento (por ejemplo, 100 para incrementos de 100 en 100)
+  let interval = 1; // Ajusta este valor para cambiar la velocidad (por ejemplo, 2 para una animación más rápida)
+  let increment = 1; // Ajusta este valor para cambiar el incremento (por ejemplo, 100 para incrementos de 100 en 100)
 
   valueDisplay.forEach((valueDisplay) => {
     if (isElementInViewport(valueDisplay) && !valueDisplay.classList.contains("animated")) {
@@ -135,9 +143,21 @@ function startCounterIfVisible() {
           sign = "+ ";
         }
         
+        let word ="";
+        if (valueDisplay.classList.contains("hours")) {
+          word = " Hours";
+        } else if (valueDisplay.classList.contains("x")) {
+          word = ".0 X";
+        } else if (valueDisplay.classList.contains("days")) {
+          word = " Days";
+        }
+
+
         let formattedValue = formatNumberWithCommas(startValue);
-        valueDisplay.textContent = sign + formattedValue;
+        valueDisplay.textContent = sign + formattedValue + word;
       }, duration);
+
+
     }
   });
 }
@@ -179,3 +199,5 @@ window.addEventListener("scroll", animateIfVisible);
 
 // Llamar a la función una vez cuando la página se carga por primera vez
 animateIfVisible();
+
+//CALENDARY INTEGRATION

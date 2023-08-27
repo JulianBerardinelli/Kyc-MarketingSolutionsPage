@@ -1,4 +1,74 @@
 .conteiner3 {
     height: 100vh;
     background:linear-gradient(to bottom, #0d00ff, aqua);
+    @include flex (block, center, center);
+    margin-top: -61px;
+    padding-left: 100px;
+    padding-right: 100px;
+    .cont4 {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            color: white;
+            margin-top: -30px;
+            padding-top: 35px;
+            font-size: 35px;
+            text-shadow: 0px 2px 7px rgba(179, 179, 179, 0.5);
+        }
+        h2 {
+            padding-top: 50px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 150;
+            letter-spacing: 8px;
+            color: white;
+        }
+    }
+    .gridserv {
+        margin-top: -25px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 70px;
+        padding-top: 20px;
+        img {
+            display: block;
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            &:hover {
+                transform: scale(1.05); 
+            }
+        }
+        .lista-servicios {
+            @include flex (block, center, center);
+            margin-top: -10px;
+            div {
+                @include flex (block, center, center);
+                .serv-icon {
+                    fill: rgb(255, 255, 255);
+                    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+                    &:hover {
+                        transform: scale(1.05); 
+                    }
+                }
+                h5 {
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+                    padding-top: 10px;
+                    &:hover {
+                        text-shadow: 0px 4px 7px rgb(140, 0, 255);
+                    }
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                    padding-right: 250px;
+                    font-family: poppins, sans-serif;
+                    font-weight: 600;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+
+        }
+    }
 }
