@@ -276,6 +276,38 @@ body {
     .arrows span:nth-child(3) {
       animation-delay: -.4s; }
 
+.wave {
+  position: absolute;
+  top: 420px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../assets/img/wave.png);
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i)*0.25); }
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px; }
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px; }
+  .wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px; }
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px; }
+
+@media screen and (max-width: 768px) {
+  .wave {
+    top: 325px; } }
+
 header {
   width: 100%;
   height: 150px;
@@ -400,33 +432,6 @@ main section {
       text-shadow: 0 0 7px rgba(0, 255, 255, 0.2);
       position: absolute;
       top: -40px; }
-  main section .wave {
-    position: absolute;
-    top: 420px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(../assets/img/wave.png);
-    background-size: 1000px 100px;
-    animation: animate 4s ease-in-out infinite;
-    animation-delay: calc(var(--i)*0.25); }
-    main section .wave#wave1 {
-      z-index: 1000;
-      opacity: 1;
-      background-position-x: 400px; }
-    main section .wave#wave2 {
-      z-index: 999;
-      opacity: 0.5;
-      background-position-x: 300px; }
-    main section .wave#wave3 {
-      z-index: 998;
-      opacity: 0.2;
-      background-position-x: 200px; }
-    main section .wave#wave4 {
-      z-index: 999;
-      opacity: 0.7;
-      background-position-x: 100px; }
 
 @keyframes animate {
   0%, 100% {
@@ -808,3 +813,177 @@ footer {
     margin-bottom: 8px; }
   .profil {
     display: block; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 768px;
+    display: flex;
+    justify-content: center; }
+  section {
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  main section .titulo {
+    padding: 10px; }
+    main section .titulo h1 {
+      font-size: 8vw; }
+      main section .titulo h1::after {
+        font-size: 8vw; }
+  main section .subtitulo h2 {
+    font-size: 20px;
+    padding-left: 100px;
+    padding-right: 100px; }
+  main .conteiner1 {
+    margin-top: -167px;
+    padding: 50px; }
+    main .conteiner1 .content {
+      margin-top: 4px;
+      gap: 20px; }
+    main .conteiner1 div {
+      display: block;
+      padding-top: 0;
+      padding-left: 0;
+      margin-top: 0; }
+      main .conteiner1 div .button-conteiner {
+        margin-top: -2px; }
+      main .conteiner1 div h2 {
+        margin-top: 5px;
+        font-size: 30px;
+        padding-right: 0px;
+        padding-left: 20px; }
+      main .conteiner1 div .button-conteiner {
+        margin-top: 0px;
+        padding-left: 20px; }
+      main .conteiner1 div p {
+        font-size: 12px;
+        padding: 20px;
+        padding-right: 0px;
+        margin-top: 20px; }
+      main .conteiner1 div .mobile-div {
+        display: flex;
+        margin-left: 10PX; }
+      main .conteiner1 div .mobile {
+        margin-top: -50px;
+        width: 220px; }
+  main .conteiner2 {
+    margin-top: -61px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: auto; }
+    main .conteiner2 .content2 {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; }
+      main .conteiner2 .content2 .number-data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        main .conteiner2 .content2 .number-data span.num {
+          margin-top: 10px;
+          display: grid;
+          place-items: center;
+          font-weight: 600;
+          font-size: 25px; }
+        main .conteiner2 .content2 .number-data span.text {
+          padding: 10px; }
+      main .conteiner2 .content2 .data-number2 {
+        margin-top: 0px;
+        justify-content: center;
+        gap: 100px; }
+        main .conteiner2 .content2 .data-number2 .number-data2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          main .conteiner2 .content2 .data-number2 .number-data2 span.num {
+            font-size: 25px; }
+          main .conteiner2 .content2 .data-number2 .number-data2 span.text {
+            font-size: 15px;
+            text-align: center;
+            padding: 10px; }
+  main .conteinerw3 {
+    display: block;
+    justify-content: center;
+    align-items: normal;
+    margin-top: 60px; }
+    main .conteinerw3 div {
+      margin-top: 2px; }
+      main .conteinerw3 div .carta {
+        margin: 0px;
+        padding: 0;
+        margin-top: 0; }
+      main .conteinerw3 div .cont3 {
+        margin-top: 15px;
+        flex-direction: column;
+        justify-content: flex-start; }
+        main .conteinerw3 div .cont3 h1 {
+          margin-top: -20px;
+          padding-top: 35px;
+          font-size: 35px; }
+        main .conteinerw3 div .cont3 h2 {
+          padding-top: 35px;
+          font-size: 15px; }
+    main .conteinerw3 .cards-choose {
+      padding: 20px;
+      padding-top: 0;
+      margin-top: -5px; }
+      main .conteinerw3 .cards-choose .carta {
+        margin: 5px;
+        margin-top: 30px;
+        padding: 0px; }
+        main .conteinerw3 .cards-choose .carta div .svg-icon {
+          width: 16%;
+          fill: aqua;
+          transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+          main .conteinerw3 .cards-choose .carta div .svg-icon:hover {
+            transform: scale(1.1); }
+        main .conteinerw3 .cards-choose .carta div h5 {
+          color: black; }
+        main .conteinerw3 .cards-choose .carta div p {
+          padding-top: 5px;
+          font-weight: normal;
+          font-size: 12px; }
+  main .conteiner3 .gridserv {
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding-top: 20px; }
+    main .conteiner3 .gridserv img {
+      width: 300px; }
+    main .conteiner3 .gridserv .lista-servicios {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      margin-top: -40px;
+      width: 80%;
+      gap: 50px; }
+      main .conteiner3 .gridserv .lista-servicios div {
+        text-align: center;
+        width: 200px; }
+        main .conteiner3 .gridserv .lista-servicios div .serv-icon {
+          margin-top: -20px; }
+        main .conteiner3 .gridserv .lista-servicios div h5 {
+          font-size: 20px; }
+        main .conteiner3 .gridserv .lista-servicios div p {
+          margin-top: 10px;
+          font-size: 14px;
+          padding-right: 0; }
+  .content-footer {
+    flex-wrap: wrap;
+    justify-content: left; }
+  .service-area {
+    flex-wrap: wrap;
+    justify-content: left; }
+  .service-header {
+    margin-left: 0;
+    margin-right: 40px; }
+  .media-area {
+    margin-bottom: 1rem; }
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center; } }

@@ -1,0 +1,223 @@
+
+@media screen and (max-width: 768px) {
+    header {
+        max-width: 768px;
+        display: flex;
+        justify-content: center;
+        }
+        section {
+            width: 100vh;
+            @include flex(flex, space-between, center);
+        }
+        main {
+            section{
+                .titulo {
+                    padding: 10px;
+                    h1 {
+                        font-size: 8vw;
+                        &::after {
+                            font-size: 8vw;
+                        }
+                    }
+                }
+                .subtitulo {
+                    h2 {
+                        font-size: 20px;
+                        padding-left: 100px;
+                        padding-right: 100px;
+                    }
+                }
+            }
+            .conteiner1 {
+                margin-top: -167px;
+                padding: 50px;
+                .content {
+                    margin-top: 4px;
+                    gap: 20px;
+                    }
+                    div {
+                        display: block;
+                        padding-top: 0;
+                        padding-left: 0;
+                        margin-top: 0;
+                        .button-conteiner {
+                            margin-top: -2px;
+                        }
+                        h2 {
+                            margin-top: 5px;
+                            font-size: 30px;
+                            padding-right: 0px;
+                            padding-left: 20px;
+                        }
+                        .button-conteiner {
+                            margin-top: 0px;
+                            padding-left: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                            padding: 20px;
+                            padding-right: 0px;
+                            margin-top: 20px;
+                        }
+                        .mobile-div {
+                            display: flex;
+                            margin-left: 10PX;
+                        }
+                        .mobile {
+                            margin-top: -50px;
+                            width: 220px;
+                        }
+                }
+            }
+            .conteiner2 {
+                margin-top: -61px;
+                padding-left: 50px;
+                padding-right: 50px;
+                height: auto;
+                .content2 {
+                    @include flex (block ,center,center);
+                    margin-top: 20px;
+                    .number-data{
+                        @include flex (flex, center, center);
+                        flex-direction: column;
+                        span.num {
+                            margin-top: 10px;
+                            display: grid;
+                            place-items: center;
+                            font-weight: 600;
+                            font-size: 25px;
+                        }
+                        span.text {
+                            padding: 10px;
+                        }
+                    }
+                    .data-number2 {
+                        margin-top: 0px;
+                        justify-content:center ;
+                        gap: 100px;
+                        .number-data2 {
+                            @include flex (flex, center, center);
+                            flex-direction: column;
+                            span.num {
+                                font-size: 25px;
+                            }
+                            span.text {
+                                font-size: 15px;
+                                text-align: center;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .conteinerw3 {
+                @include flex(block, center, normal);
+                margin-top: 60px;
+                div {
+                    margin-top: 2px;
+                    .carta {
+                        margin: 0px;
+                        padding: 0;
+                        margin-top: 0;
+                    }
+                    .cont3 {
+                        margin-top: 15px;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        h1 {
+                            margin-top: -20px;
+                            padding-top: 35px;
+                            font-size: 35px;
+                        }
+                        h2 {
+                            padding-top: 35px;
+                            font-size: 15px;
+                            
+                        }
+                    }
+                }
+                .cards-choose {
+                    padding: 20px;
+                    padding-top: 0;
+                    margin-top: -5px;
+                    .carta {
+                        margin: 5px;
+                        margin-top: 30px;
+                        padding: 0px;
+                        div {
+                            .svg-icon {
+                                width: 16%;
+                                fill:  aqua;
+                                transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+                                &:hover {
+                                    transform: scale(1.1); 
+                                }
+                            }
+                            h5 {
+                                color: rgb(0, 0, 0);
+                            }
+                            p {
+                                padding-top: 5px;
+                                font-weight: normal;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .conteiner3 {
+                .gridserv {
+                    margin-top: -25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0px;
+                    padding-top: 20px;
+                    img {
+                        width: 300px ;
+                    }
+                    .lista-servicios {
+                        @include flex (flex, center,  baseline);
+                        margin-top: -40px;
+                        width: 80%;
+                        gap: 50px;
+                        div {
+                            text-align: center;
+                            width: 200px;
+                            .serv-icon {
+                                margin-top: -20px;
+                            }
+                            h5 {
+                                font-size: 20px;
+                            }
+                            p {
+                                margin-top: 10px;
+                                font-size: 14px;
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    .content-footer {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service-area {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service-header {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    .media-area {
+        margin-bottom: 1rem;
+    }
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
