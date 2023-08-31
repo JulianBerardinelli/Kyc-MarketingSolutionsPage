@@ -30,6 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//ub waves
+// Obtén la altura del dispositivo en unidades vh
+function hideWavesIfNeeded() {
+  // Obtén la altura del dispositivo en unidades vh
+  const deviceHeight = window.innerHeight * 100 / document.documentElement.clientHeight;
+  
+  // Verifica si la altura del dispositivo es mayor a 662vh
+  if (deviceHeight > 662) {
+      // Oculta las ondas cambiando su visibilidad
+      const waves = document.querySelectorAll('.wave');
+      waves.forEach(wave => {
+          wave.style.display = 'none';
+      });
+  }
+}
+
+// Llama a la función cuando la página esté completamente cargada
+window.addEventListener('load', hideWavesIfNeeded);
+
+
 
 // Ocultar flechas
 
