@@ -1,0 +1,40 @@
+.conteiner4 {
+    background:linear-gradient(to bottom, aqua, rgb(0, 169, 169));
+    margin-top: -60px;
+    height: auto;
+.roww {
+    padding-right:100px;
+    padding-left: 100px;
+    .cart {
+        padding-left: 50px;
+        --bs-body-bg : rgba(1, 238, 238, 0.5);;
+        --bs-card-border-color: rgba(255, 255, 255, 0.5);
+    }
+    .cart2 {
+        // padding-right: 100px;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        h5 {
+            color:rgb(115, 0, 255);
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        .list-group {
+            --bs-list-group-border-color: #dee2e600;
+            --bs-list-group-bg: rgba(255, 255, 255, 0.0);
+            .list-group-item {
+                margin-left: -30px;
+            }
+            label {
+                font-family: "poppins";
+                font-weight: 600;
+                font-size: 12px;
+                color: white;
+            }
+        }
+    }
+}
+}
