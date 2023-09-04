@@ -2,6 +2,33 @@
     background:linear-gradient(to bottom, aqua, rgb(0, 169, 169));
     margin-top: -60px;
     height: auto;
+    .titlecont4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            margin-top: 150px;
+            color: white;
+            font-size: 35px;
+        }
+        p{
+            padding-top: 10px;
+            font-weight: 200;
+            text-align: center;
+            color: white;
+            font-family: "poppins";
+        }
+    }
+    .secondp {
+        padding-top: 30px;
+        p {
+            font-weight: 200;
+            text-align: center;
+            color: white;
+            font-family: "poppins";
+        }
+    }
 .roww {
     padding-right:100px;
     padding-left: 100px;
