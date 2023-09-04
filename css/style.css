@@ -418,7 +418,7 @@ main section {
         overflow: hidden;
         animation: title 2s linear forwards; }
       main section .titulo h1::after {
-        content: "Kyc";
+        content: "KYC";
         position: absolute;
         padding: 20px;
         top: 0;
@@ -729,6 +729,7 @@ main section {
     padding-top: 30px; }
     .conteiner4 .secondp p {
       font-weight: 200;
+      justify-content: center;
       text-align: center;
       color: white;
       font-family: "poppins"; }
